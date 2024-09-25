@@ -1,0 +1,43 @@
+@foreach ($fetchUpcomingTournaments as $tournament)
+    <tr class="item">
+        <td>
+            <a href="{{ route('tournamentDetail', ['id' => $tournament->tournament_id]) }}">
+                {{ $tournament->tournamentName }}
+            </a>
+        </td>
+        <td>
+            <a href="{{ route('academyDetail', ['id' => $tournament->academy_id]) }}">
+                {{ $tournament->name }}
+            </a>
+        </td>
+        <td>{{ $tournament->category }}</td>
+        <td>{{ $tournament->subCategory }}</td>
+        <td>{{ $tournament->city }}</td>
+        <td>{{ date('d/m/Y', strtotime($tournament->fromDate)) }}</td>
+         <td>{{ date('d/m/Y', strtotime($tournament->lastDate)) }}</td>
+        <td>
+            @if ($tournament->factsheet)
+                <a href="{{ $tournament->factsheet }}" target="_blank" class="theme-btn factsheet-btn">
+                    Factsheet
+                </a>
+            @endif
+        </td>
+        <td>
+            @if (session()->has('id') && session()->has('role'))
+                @if (session()->get('role') === 'Player')
+                    <a href="{{ route('players.upcomingTournaments') }}" class="theme-btn tournament-register-btn">
+                        Register
+                    </a>
+                @else
+                    <a href="{{ route('getLogin') }}" class="theme-btn tournament-register-btn">
+                        Register
+                    </a>
+                @endif
+            @else
+                <a href="{{ route('getLogin') }}" class="theme-btn tournament-register-btn">
+                    Register
+                </a>
+            @endif
+        </td>
+    </tr>
+@endforeach

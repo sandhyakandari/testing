@@ -1,0 +1,38 @@
+.update-player-status-popup {
+  width: 100%;
+}
+.update-player-status-form {
+  width: 100%;
+}
+.update-player-status-form-text > p,
+.update-player-status-form-radio > p {
+  color: #222;
+}
+.update-player-status-form-text-input:focus {
+  box-shadow: unset;
+  border-color: #ff5e14;
+}
+.modal-footer-update {
+  line-height: 24px;
+  padding: 11px 28px;
+  border-radius: 12px;
+  box-shadow: unset;
+}
+.modal-footer-update::before {
+  border-radius: 12px;
+}
+.modal-footer-close {
+  line-height: 24px;
+  padding: 11px 28px;
+  border-radius: 12px;
+  box-shadow: unset;
+  background-color: #0d2933;
+}
+.modal-footer-close::before {
+  background-color: #ff5e14;
+  border-radius: 12px;
+}
+.modal-footer-close:hover {
+  background-color: #ff5e14;
+  border-radius: 12px;
+}

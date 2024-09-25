@@ -1,0 +1,120 @@
+.tournament-draw-box {
+  width: 100%;
+}
+.tournament-draw-box .nav-pills .nav-item {
+  margin-bottom: 20px;
+}
+.tournament-draw-box .nav-pills .nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 9px 34px 11px 34px;
+  margin: 0px 20px;
+  background: #f0f1f5;
+  border: 2px solid #f0f1f5;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #222222;
+}
+.tournament-draw-box .nav-pills .nav-link.active,
+.tournament-draw-box .nav-pills .show > .nav-link {
+  border: 2px solid #ff5e14;
+  background: transparent;
+  color: #ff5e14;
+}
+.tournament-draw-box .nav-pills .nav-link.active::before {
+  position: absolute;
+  content: "";
+  background: #ffffff;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  margin-left: -6px;
+  bottom: -7px;
+  border-bottom: 2px solid #ff5e14;
+  border-right: 2px solid #ff5e14;
+  transform: rotate(45deg);
+}
+.under-sub-category-draw-box > p {
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+  font-size: 22px;
+  line-height: 32px;
+  color: #222222;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.player-draw-round {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* **************** */
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  width: 100%;
+}
+.round {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  list-style: none;
+  padding: 0;
+}
+.round .spacer {
+  flex-grow: 1;
+}
+.round .spacer:first-child,
+.round .spacer:last-child {
+  flex-grow: 0.5;
+}
+.round .game-spacer {
+  flex-grow: 1;
+}
+
+li.game {
+  padding-left: 20px;
+}
+
+li.game.winner {
+  font-weight: bold;
+}
+li.game span {
+  float: right;
+  margin-right: 5px;
+}
+
+li.game-bottom {
+  border-bottom: 1px solid #ff5e14;
+}
+
+li.game-spacer {
+  border-right: 1px solid #ff5e14;
+  min-height: 40px;
+}
+
+li.game-top {
+  border-top: 1px solid #ff5e14;
+}
+
+/*  */
+#draw_tournament {
+  display: block !important;
+}
+.flex-basis-100 {
+  flex-basis: 100%;
+  width: 100%;
+}
+/*  */
+.give-by {
+  width: 400px;
+}

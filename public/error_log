@@ -1,0 +1,1 @@
+[09-Jul-2024 11:34:32 asia/kolkata] PHP Fatal error:  Cannot redeclare App\Http\Controllers\AdminController::adminLogOut() in /home4/etech1m4/public_html/TennisPortal/app/Http/Controllers/AdminController.php on line 757
